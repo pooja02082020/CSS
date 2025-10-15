@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* div  section p { */
+        /* color: blueviolet; */
+        /* }    ---descendent combinator */
+
+        /* div > p { */
+        /* color: brown; */
+        /* }  ---Child combinator*/
+
+        /* we target adjacent siblings in adjacent sibling   only target h2 immediate sibling of h1 */
+        /* h1+h2{ */
+        /* color: blueviolet; */
+        /* } */
+
+        /* h2+p{ */
+        /* color: darkmagenta; */
+        /* } */
+
+        /* General Sibling Combinator - we target all the siblings */
+
+        h1~h2 {
+            color: crimson;
+        }
+
+        h2~p {
+            color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Welcome to my Webpage!!</h1>
+        <h2>Hello, This is the first heading</h2>
+        <p>We are really having fun in this section</p>
+        <p>Another p tag</p>
+
+        <section>
+            <h4>This is an another section:</h4>
+            <h2>Testinf Adjacent sibling</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, obcaecati. Ipsa omnis quisquam
+                doloremque cum accusantium magni enim at dignissimos, reprehenderit quia quis nobis ducimus fugiat iste
+                neque qui aliquam!</p>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sed! Assumenda ipsa hic pariatur, rem eos
+            in beatae numquam, omnis, consequatur impedit nihil quis animi alias culpa harum. Doloribus, laboriosam.</p>
+    </div>
+</body>
+
+</html>
