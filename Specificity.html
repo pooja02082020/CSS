@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1{
+            color: brown !important;
+            /* If we write important afrer any value then it gonna be in priority */
+            background-color: azure;
+        }
+
+        /* 1 inline 2. id 3. class 4. element 5 universal */
+
+        #heading{
+            color: blue;
+        }
+
+        .head{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="head" style="color: cornflowerblue;">Welcome to My WebPage!!</h1>
+    <h4>This is the  first section of the page.</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis praesentium quisquam consequatur quam tempore autem explicabo eaque fuga repudiandae atque ab, incidunt veniam vel dignissimos accusamus aliquid vitae ipsum animi.</p>
+</body>
+</html>
