@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        div {
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            /* border:4px solid red; */
+        }
+
+        #div1 {
+            border: 4px solid red;
+            padding: 20px;
+            /* When it will increase the size  but if we don't want the size to increase then we use box-sizing*/
+        }
+
+        #div2 {
+            border: 4px solid red;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div><br><br>
+    <div id="div2"></div>
+</body>
+
+</html>

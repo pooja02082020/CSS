@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EM Practice</title>
+  <style>
+
+    .parent {
+      font-size: 20px;
+      width:300px;
+      height:300px;
+      background-color: #f0f0f0;
+    }
+
+    .child {
+      font-size: 1.5em; /* 1.5 * 20px = 30px */
+      width: 4em;
+      height: 4em;
+      background-color: lightblue;
+    }
+      .grandchild {
+      /* font-size: 0.5em; 0.5 * 30px = 15px */
+      width: 6em;
+      height: 6em;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    Parent Text (20px)
+    <div class="child">
+      Child Text (30px)
+      <div class="grandchild">
+        Grandchild Text (15px)
+      </div>
+    </div>
+  </div>
+</body>
+</html>
