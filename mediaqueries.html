@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        #box1 {
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+        /* @media screen and (max-width: 768px) { */
+        /* #box1 { */
+        /* background-color: aquamarine; */
+        /* width: 100px; */
+        /* height: 150px; */
+        /* } */
+        /* } */
+
+        @media screen and (min-width:768px) {
+            #box1 {
+                background-color: coral;
+                width: 400px;
+                height: 400px;
+                border: 2px solid blueviolet;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+        }
+/*  */
+         /* @media screen and (max-width:768px){ */
+     /* #box1 { */
+         /* background-color: aqua; */
+         /* width: 100px; */
+         /* height: 100px; */
+         /* border: 2px solid blue; */
+     /* } */
+     /* h1 { */
+         /* font-size: 30px; */
+     /* } */
+     /* h2 { */
+         /* font-size: 15px; */
+     /* } */
+
+     
+     
+         /* @media screen and (min-width:600px) and (max-width:1024px){ */
+     /* #box1 { */
+         /* background-color: crimson; */
+         /* width: 200px; */
+         /* height: 200px; */
+         /* border: 2px solid blue; */
+     /* } */
+     /* h1 { */
+         /* font-size: 40px; */
+     /* } */
+     /* h2 { */
+         /* font-size: 55px; */
+     /* } */
+
+     @media screen and (orientation: landscape) {
+        body{
+            background-color: cornflowerblue;
+        }
+    }
+
+        @media screen and (orientation: portrait) {
+            body{
+                background-color: chocolate;
+            }
+     }
+
+     @media print{ 
+        /* We want to print in different layout and design we can change through media print */
+        body{
+            background-color: chartreuse;
+        }
+     }
+ 
+
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my webpage</h1>
+    <div id="box1">
+        <h2>Hello</h2>
+    </div>
+</body>
+
+</html>
